@@ -1,0 +1,260 @@
+/*----------------------------------------------------------------------------*/
+/* Resets
+/*----------------------------------------------------------------------------*/
+
+body, html, div, blockquote, img, label, p, a, h1, h2, h3, h4, h5, h6, pre, ul,
+ol, li, dl, dt, dd, form, fieldset, input, th, td, figure {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+}
+img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+	width: auto;
+}
+video {
+	height: auto;
+	max-width: 100%;
+}
+a, :focus {
+	outline: 0;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+::-moz-selection {
+	background: #d6d8e6;
+}
+::selection {
+	background: #d6d8e6;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Utility
+/*----------------------------------------------------------------------------*/
+
+body {
+	background-color: rgb(238, 238, 238);
+}
+a {
+	-moz-transition: all 0.25s ease-in-out 0s;
+	-ms-transition: all 0.25s ease-in-out 0s;
+	-o-transition: all 0.25s ease-in-out 0s;
+	-webkit-transition: all 0.25s ease-in-out 0s;
+	transition: all 0.25s ease-in-out 0s;
+}
+a, a:visited {
+	color: rgb(51, 51, 51);
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: rgb(170, 170, 170);
+}
+footer {
+	position: relative;
+}
+.wrapper {
+	margin: 0 auto;
+	max-width: 63.75em;
+	position: relative;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Clear Floats
+/*----------------------------------------------------------------------------*/
+
+.clear:after {
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/* Typography
+/*----------------------------------------------------------------------------*/
+
+body {
+	font-family: 'Lato', sans-serif, Helvetica, Arial;
+	font-style: normal;
+	font-weight: 400;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+h1 {
+	color: rgb(255, 255, 255);
+	font-size: 5em;
+	font-weight: 400;
+	line-height: 1;
+	margin-bottom: 0.25em;
+}
+
+h1 span {
+	left: -9999em;
+	position: absolute;
+	top: -9999em;
+}
+h2 { 
+    font-family: "ProximaNovaA-Extrabld", Arial, sans-serif;
+	color: rgb(51, 51, 51);
+	font-size: 3.575em;
+    letter-spacing: .05em;
+	line-height: 1.16666667;
+	margin: 0 0 0.5em 0.25em;
+    text-shadow: 0px 1px 0px rgba(221, 221, 221, 0.75);
+}
+p {
+	color: rgb(85, 85, 85);
+	font-size: 1.12em;
+	line-height: 1.43333333;
+	margin: 0 1em;
+	text-shadow: 0px 1px 0px rgba(221, 221, 221, 0.75);
+}
+ul {
+	font-size: 0.9375em;
+	line-height: 3.33333333;
+	list-style: none;
+	text-align: left;
+    margin: 0 1em 0 1em;
+}
+li {
+	border-top: 1px solid rgb(255, 255, 255);
+}
+li:first-child {
+	border-top: none;
+}
+li a {
+	display: block;
+}
+i {
+	font-style: normal;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Super Hero
+/*----------------------------------------------------------------------------*/
+
+.super-hero {
+	background-attachment: fixed;
+	background-clip: border-box;
+	background-image: url(../images/the-bg.jpg);
+	background-origin: padding-box;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.oroman {
+	margin: 0 auto;
+	max-width: 30.9375em;
+	padding: 3.8125em 0;
+	position: relative;
+	text-align: left;
+}
+
+/*----------------------------------------------------------------------------*/
+/* 500px and wider
+/*----------------------------------------------------------------------------*/
+
+@media only screen and ( min-width: 31.25em ) {
+    
+    h2 { 
+	   margin: 0 0 0.5em -0.05em;
+    }
+	p {
+		font-size: 1.1875em;
+		line-height: 1.57894737;
+		margin: 0;
+	}
+	.oroman {
+		bottom: 3.125em;
+		left: 0.9375em;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		text-align: left;
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* 740px and wider
+/*----------------------------------------------------------------------------*/
+
+@media only screen and ( min-width: 46.25em ) {
+	footer {
+		background-color: rgb(238, 238, 238);
+		bottom: 0;
+		left: 0;
+		position: fixed;
+		width: 100%;
+	}
+	h1 {
+		margin-bottom: 0.75em;
+	}
+	h2 {
+		font-size: 4.375em;
+		line-height: 1.07142857;
+		margin-bottom: 0.42857143em;
+	}
+	p {
+		font-size: 1.1875em;
+		line-height: 1.57894737;
+	}
+	ul {
+		float: right;
+		margin-right: 1.25em;
+		text-align: right;
+	}
+	li {
+		border-top: none;
+		float: left;
+		margin-left: 2.5em;
+	}
+	.oroman {
+		bottom: 5.625em;
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* 1035px and wider
+/*----------------------------------------------------------------------------*/
+
+@media only screen and ( min-width: 64.6875em ) {
+	h2 {
+		font-size: 4.375em;
+		line-height: 1.07142857;
+		margin-bottom: 0.42857143em;
+	}
+	p {
+		font-size: 1.1875em;
+		line-height: 1.57894737;
+	}
+	ul {
+		margin-right: 0;
+	}
+	.oroman {
+		bottom: 8.75em;
+		left: 0;
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* The end. Coded by @sohailsarwar101
+/*----------------------------------------------------------------------------*/
