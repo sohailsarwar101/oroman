@@ -1,4 +1,4 @@
-// iPhone scaling bug fix by @mathias, @cheeaun and @jdalton
+// iPhone scaling
 (function(doc) {
 
 	var addEvent = 'addEventListener',
